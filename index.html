@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API JSON List Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>API JSON List Viewer</h1>
+      <p>Load JSON from an API endpoint and display it as a list.</p>
+
+      <form id="api-form" class="controls">
+        <input
+          id="api-url"
+          type="text"
+          value="https://jsonplaceholder.typicode.com/posts"
+          placeholder="Enter API URL"
+        />
+        <button id="fetch-button" type="submit">Load Data</button>
+      </form>
+
+      <p id="status" class="status">Ready to load data.</p>
+      <ul id="results" class="results-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
